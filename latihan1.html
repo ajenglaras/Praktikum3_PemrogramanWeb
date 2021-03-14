@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Konversi Nilai</title> <!-- judul pada header browser -->
+        <style>
+            body {
+                background:turquoise }
+            section {
+                background: mediumseagreen; color:black; padding: 1em; position: absolute; top: 50%; left: 50%; margin-right: -50%; 
+                transform: translate(-50%, -50%) }
+        </style> 
+        <!--pada bagian style body memberikan style pada bagian baody web yaitu background web warna turquoise,
+        pada bagian style section memberikan style warna background mediumseagreen, warna font hitam, jarak antara text dan border 1em,
+        kemudian membawa semua elemen yang berada di body web ke posisi center di tengah-tengah dengan jarak margin kanan, kiri,
+        atas, dan bawah sebesar 50% dari luas tampilan-->
+    </head>
+    <script language="JavaScript"> //memberikan script bahasa javascript
+        function test () { //mendeklarasikan fungsi test
+        var val1=document.kirim.T1.value //menginisialisasi inputan yang diinput user sebagai val1 dan disimpan pada T1
+        if(val1>=0&&40) //jika nilai val1 adalah 0 sampai 40
+        document.kirim.T2.value="E" //maka akan menampilkan output "E"
+        if(val1>40&&55) //jika nilai val1 adalah 40 sampai 55
+        document.kirim.T2.value="D" //maka akan menampilkan output "D"
+        if(val1>55&&60) //jika nilai val1 adalah 55 sampai 60
+        document.kirim.T2.value="C" //maka akan menampilkan output "C"
+        if(val1>60&&65) //jika nilai val1 adalah 60 sampai 65
+        document.kirim.T2.value="BC" //maka akan menampilkan output "BC"
+        if(val1>65&&70) //jika nilai val1 adalah 65 sampai 70
+        document.kirim.T2.value="B" //maka akan menampilkan output "B"
+        if(val1>70&&80) //jika nilai val1 adalah 70 sampai 80
+        document.kirim.T2.value="AB" //maka akan menampilkan output "AB"
+        if(val1>80&&100) //jika nilai val1 adalah 80 sampai 100
+        document.kirim.T2.value="A" //maka akan menampilkan output "A"
+        }
+    </script>
+    <body>
+        <h3> WEBSITE KONVERSI NILAI ANGKA KE HURUF AJENG LARAS</h3>
+        <section>
+            <h3>KONVERSI NILAI ANGKA KE NILAI HURUF</h3> <!--menampilkan text dengan ukuran h3-->
+            <form method="POST" name="kirim"> <!--membuat form method jenis post dan nama dengan nama kirim -->
+            <p>NILAI ANGKA <input type="text" name="T1" size="20"> <!--membuat text NILAI ANGKA kemudian membuat inputan dengan jenis 
+            text box dan dengan ukuran 20-->
+            NILAI HURUF <input type="text" name="T2" size="20"> <!--membuat text NILAI HURUF kemudian membuat inputan dengan jenis 
+            text box dan dengan ukuran 20-->
+            </p>
+            <p><input type="button" value="KONVERSI" name="B1" onclick=test()> <!--membuat button dengan nama konversi, dan jika 
+            button diklik maka akan menampilkan output berdasarkan function test sesuai value nya-->
+            </p>
+            </form>
+        </section>
+    </body>
+</html>

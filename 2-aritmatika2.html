@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Contoh Program Javascript</title> <!-- judul pada header browser -->
+    </head>
+        <script language="JavaScript"> //memberikan script bahasa javascript
+        function test (val1, val2) //mendeklarasikan fungsi test yang berisi val1 dan val2
+        {
+        document.write("<br>"+"Perkalian : val1*val2 "+"<br>") //menampilkan text val1 * val2 
+        document.write(val1*val2) //menampilkan data hasil perkalian val1 dan val2 
+        document.write("<br>"+"Pembagian : val1/val2 "+"<br>") //menampilkan text val1 / val2 
+        document.write(val1/val2) //menampilkan data hasil pembagian val1 dan val2 
+        document.write("<br>"+"Penjumlahan : val1+val2 "+"<br>") //menampilkan text val1 + val2 
+        document.write(val1+val2) //menampilkan data hasil penjumlahan val1 dan val2 
+        document.write("<br>"+"Pengurangan : val1-val2 "+"<br>") //menampilkan text val1 - val2 
+        document.write(val1-val2) //menampilkan data hasil pengurangan val1 dan val2 
+        document.write("<br>"+"Modulus : val1%val2 "+"<br>") //menampilkan text modulus val1 % val2 
+        document.write(val1%val2) //menampilkan data hasil modulus val1 dan val2
+        }
+        </script>
+    <body>
+        <input type="button" name="button1" value="arithmetic" 
+        onclick=test(9,4)> <!--memberikan inoutan button dengan nama arithmetic kemudian ketika tombol diklik 
+        akan menampilkan function test di atas dengan nilai variabel val1=9 dan val2=4 -->
+    </body>
+
+</html>

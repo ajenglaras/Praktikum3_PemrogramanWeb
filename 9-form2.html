@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Objek document</title> <!-- judul pada header browser -->
+    </head>
+    <body>
+        <script LANGUAGE = "JavaScript"> //memberikan script bahasa javascript
+        //<!-
+        function ubahWarnaLB(warna) { //mendeklarasikan fungsi untuk mengubah warna background
+        document.bgColor = warna; //menginisialisasi warna background 
+        }
+        function ubahWarnaLD(warna) { //mendeklarasikan fungsi untuk mengubah warna font
+        document.fgColor = warna; //menginisialisasi warna font
+        }
+        //->
+        </script>
+        <H1>TES</H1> <!--text dengan ukuran h1-->
+        <form> <!--untuk menambahkan form-->
+            <input TYPE = "BUTTON"
+                VALUE = "Latar Belakang Hijau"
+                onClick = "ubahWarnaLB('GREEN')"><!--memberikan input berupa button dengan nama warna latar belakang hijau, dan jika button 
+                diklik maka warna latar belakang pada tampilan web akan berubah menjadi hijau-->
+            <input TYPE = "BUTTON"
+                VALUE = "Latar Belakang Putih"
+                onClick = "ubahWarnaLB('WHITE')"><!--memberikan input berupa button dengan nama warna latar belakang putih, dan jika button 
+                diklik maka warna latar belakang pada tampilan web akan berubah menjadi putih-->
+            <input TYPE = "BUTTON"
+                VALUE= "Teks Kuning"
+                onClick = "ubahWarnaLD('YELLOW')"><!--memberikan input berupa button dengan nama teks kuning, dan jika button diklik
+                    maka text pada tampilan web akan berubah menjadi kuning-->
+            <input TYPE = "BUTTON"
+                VALUE = "Teks Biru"
+                onClick = "ubahWarnaLD('BLUE')"><!--memberikan input berupa button dengan nama teks biru, dan jika button diklik
+                    maka text pada tampilan web akan berubah menjadi biru-->
+        </form>
+    </body>
+</html>

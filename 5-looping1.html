@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Contoh Program Javascript</title> <!-- judul pada header browser -->
+    </head>
+        <script language="JavaScript"> //memberikan script bahasa javascript
+        function test () //mendeklarasikan fungsi test
+        {
+        val1=window.prompt("Input Nilai (1-5):") //menampilkan inputan nilai (1-5) pada window sebagai variabel val1
+        switch (val1) //menyatakan kondisi val1 jika
+        {
+        case "1" : //pada case ini jika nilai inputan val1=1
+        document.write("bilangan satu") //maka akan menampilkan "bilangan satu"
+        break //stop atau memberhentikan fungsi case pertama
+        case "2" : //pada case ini jika nilai inputan val1=2
+        document.write("bilangan dua") //maka akan menampilkan "bilangan dua"
+        break//stop atau memberhentikan fungsi case kedua
+        case "3" : //pada case ini jika nilai inputan val1=3
+        document.write("bilangan tiga") //maka akan menampilkan "bilangan tiga"
+        break//stop atau memberhentikan fungsi case ketiga
+        case "4" : //pada case ini jika nilai inputan val1=4
+        document.write("bilangan empat") //maka akan menampilkan "bilangan empat"
+        break//stop atau memberhentikan fungsi case keempat
+        case "5" : //pada case ini jika nilai inputan val1=5 
+        document.write("bilangan lima") //maka akan menampilkan "bilangan lima"
+        break//stop atau memberhentikan fungsi case kelima
+        default : //jika inputan tidak sesuai case di atas 
+        document.write("bilangan lainnya") //maka akan menampilkan "bilangan lainnya"
+        }
+        }
+    </script>
+    <body>
+        <input type="button" name="button1" value="switch"
+        onclick=test()> <!--menambahkan button dengan nama switch kemudian jika button diklik 
+            maka akan menampilkan function test di atas -->
+    </body>
+</html>

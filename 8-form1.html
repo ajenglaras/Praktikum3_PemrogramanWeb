@@ -1,0 +1,21 @@
+<html>
+    <head> </head>
+    <script language="Javascript"> //memberikan script bahasa javascript
+        function test () { //mendeklarasikan fungsi test
+        var val1=document.kirim. T1. value //menginisialisasi inputan yang diinput user sebagai val1 dan disimpan pada T1
+        if (val1%2==0) //jika val1 mod 2=0
+        document.kirim.T2. value="bilangan genap" //maka akan menampilkan "bilangan genap"
+        else //jika val1 tidak mod 2=0
+        document.kirim.T2. value="bilangan ganjil" //maka akan menampilkan "bilangan ganjil"
+        }
+    </script>
+    <body>
+        <form method="POST" name="kirim"> <!--membuat form method jenis post dan nama dengan nama kirim -->
+        <p>BIL <input type="text" name="T1" size="20"> MERUPAKAN BIL <input type="text" name="T2" size="20"> </p> <!--mencetak kata BIL
+        dan user harus mengisi form dengan tipe input text angka dengan ukuran 20 yang akan di simpan dalam variabel T1, kemudian menyetak
+        MERUPAKAN untuk hasil output bilangan ganjil atau genap-->
+        <p><input type="button" value="TEBAK" name="B1" onclick=test()> </p> <!--menambahkan button dengan nama tebak dan jika 
+        button diklik maka akan menampilkan function test di atas-->
+        </form>
+    </body>
+</html>

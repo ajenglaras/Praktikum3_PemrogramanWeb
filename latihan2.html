@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Calculator</title> <!-- judul pada header browser -->
+        <style>
+            body {
+                background:turquoise }
+            section {
+                background: mediumseagreen; color:black; padding: 1em; position: absolute; top: 50%; left: 50%; margin-right: -50%; 
+                transform: translate(-50%, -50%) }
+        </style>
+        <!--pada bagian style body memberikan style pada bagian baody web yaitu background web warna turquoise,
+        pada bagian style section memberikan style warna background mediumseagreen, warna font hitam, jarak antara text dan border 1em,
+        kemudian membawa semua elemen yang berada di body web ke posisi center di tengah-tengah dengan jarak margin kanan, kiri,
+        atas, dan bawah sebesar 50% dari luas tampilan-->
+    </head>
+    <script type="text/javascript"> //memberikan script bahasa javascript
+        function tambah(){ //mendeklarasikan function tambah sebagai aksi dari tombol "tambah"
+        var angka1=parseFloat(document.calculator.angka1.value); //menginisialisasi variabel angka1 dalam documen calculator
+        var angka2=parseFloat(document.calculator.angka2.value); //menginisialisasi variabel angka2 dalam documen calculator
+        var hasil= angka1+angka2; //menginisialisasi variabel hasil yaitu hasil penjumlahan angka1 dengan angka2
+        document.calculator.hasil.value=hasil; //mencetak output dari hasil penjumlahan di atas
+        }
+        function kurang(){ //mendeklarasikan function tambah sebagai aksi dari tombol "kurang"
+        var angka1=parseFloat(document.calculator.angka1.value); //menginisialisasi variabel angka1 dalam documen calculator
+        var angka2=parseFloat(document.calculator.angka2.value); //menginisialisasi variabel angka2 dalam documen calculator
+        var hasil= angka1-angka2; //menginisialisasi variabel hasil yaitu hasil pengurangan angka1 dengan angka2
+        document.calculator.hasil.value=hasil; //mencetak output dari hasil pengurangan di atas
+        }
+        function kali(){ //mendeklarasikan function tambah sebagai aksi dari tombol "kali"
+        var angka1=parseFloat(document.calculator.angka1.value); //menginisialisasi variabel angka1 dalam documen calculator
+        var angka2=parseFloat(document.calculator.angka2.value); //menginisialisasi variabel angka2 dalam documen calculator
+        var hasil= angka1*angka2; //menginisialisasi variabel hasil yaitu hasil perkalian angka1 dengan angka2
+        document.calculator.hasil.value=hasil; //mencetak output dari hasil perkalian di atas
+        }
+        function bagi(){ //mendeklarasikan function tambah sebagai aksi dari tombol "bagi"
+        var angka1=parseFloat(document.calculator.angka1.value); //menginisialisasi variabel angka1 dalam documen calculator
+        var angka2=parseFloat(document.calculator.angka2.value); //menginisialisasi variabel angka2 dalam documen calculator
+        var hasil= angka1/angka2; //menginisialisasi variabel hasil yaitu hasil pembagian angka1 dengan angka2
+        document.calculator.hasil.value=hasil; //mencetak output dari hasil perkalian di atas
+        }
+    </script>
+    <body>
+    <h3> WEBSITE KALKULATOR SEDERHANA AJENG LARAS</h3>
+    <section>
+    <form name="calculator"> <!--menambahkan form dengan nama calculator-->
+        <table class="tabel"> <!--menambahkan tabel dengan kelas tabel-->
+        <caption>Calculator</caption> <!--memberikan caption calculator-->
+            <tr> <!--menambahkan baris pada tabel-->
+                <td>Angka 1</td><td>:</td><td><input type="number" name="angka1"></td> <!--menambahkan text angka 1 dan 
+                menambahkan kolom inputan berupa tabel atau text box dengan tipe data number dan dengan nama angka1  -->
+            </tr>
+            <tr> <!--menambahkan baris pada tabel-->
+                <td>Angka 2</td><td>:</td><td><input type="number" name="angka2"></td> <!--menambahkan text angka 2 dan 
+                    menambahkan kolom inputan berupa tabel atau text box dengan tipe data number dan dengan nama angka2  -->
+            </tr>
+            <tr> <!--menambahkan baris pada tabel-->
+                <td>Hasil</td><td>:</td><td><input type="number" name="hasil"></td> <!--menambahkan text hasil dan 
+                    menampilkan kolom output hasil yang dihasilkan dari function di atas -->
+            </tr>
+            <tr> <!--menambahkan baris pada tabel-->
+                <td colspan="3" align="center"> <!--menambahkan kolom dan menggabung kolom kemudian meletakkan di center -->
+                    <input type="button" onclick="tambah()" value="  +  "> <!--memberikan inputan tombol dengan nama tambah (+),
+                    kemudian jika tombol diklik maka akan mengaktifkan function tambah di atas-->
+                    <input type="button" onclick="kurang()" value="  -  "> <!--memberikan inputan tombol dengan nama kurang (-),
+                    kemudian jika tombol diklik maka akan mengaktifkan function kurang di atas-->
+                    <input type="button" onclick="kali()" value="  *  "> <!--memberikan inputan tombol dengan nama kali (*),
+                        kemudian jika tombol diklik maka akan mengaktifkan function kali di atas-->
+                    <input type="button" onclick="bagi()" value="  /  "> <!--memberikan inputan tombol dengan nama bagi (/),
+                        kemudian jika tombol diklik maka akan mengaktifkan function bagi di atas-->
+                </td>
+            </tr>
+        </table>
+    </form>
+    </section>
+    </body>
+</html>

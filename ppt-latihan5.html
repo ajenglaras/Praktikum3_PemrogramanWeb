@@ -1,0 +1,22 @@
+<!DOCTYPE html> <!-- deklarasi tipe sebagai html -->
+<html lang="en"> <!-- bahasa yang digunakan adalah bahasa inggris -->
+<head>
+    <meta charset="utf-8"> <!-- pengkodean karakter sesuai ketentuan UTF-8 -->
+    <title>Writing into an HTML Element with JavaScript</title> <!-- judul header browser -->
+</head>
+<body>
+    <p id="greet"></p> <!--mengidentifikasi greet-->
+    <p id="result"></p> <!--mengidentifikasi result-->
+
+    <script>
+    // Writing text string inside an element
+    document.getElementById("greet").innerHTML = "Hello Gatot!"; //menampilkan greet sebagai text hello gatot
+    
+    // Writing a variable value inside an element
+    var x = 50; //membuat variabel x dan memberikannya nilai 50
+    var y = 30; //membuat variabel y dan memberikannya nilai 30
+    var sum = x + y; //membuat variabel sum untuk menjumlahkan variabel x dan y
+    document.getElementById("result").innerHTML = sum; //menampilkan hasil sum 
+    </script>
+</body>
+</html>
